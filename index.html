@@ -60,8 +60,8 @@
               basePage.scaleY = scaleY;
               basePage.scale = (scaleX > scaleY) ? scaleY : scaleX;
               var newLeftPos = Math.abs(Math.floor(((basePage.width * basePage.scale) - maxWidth)/2));
-              var newTopPos = Math.abs(Math.floor(((basePage.height * basePage.scale) - maxHeight)/2));
-              page.attr('style', '-webkit-transform:scale(' + basePage.scale + ');left:' + newLeftPos + 'px;top:' + newTopPos + 'px;');
+              //var newTopPos = Math.abs(Math.floor(((basePage.height * basePage.scale) - maxHeight)/2)); //don't horiz center
+              page.attr('style', '-webkit-transform:scale(' + basePage.scale + ');left:' + newLeftPos + 'px;top:0px;');
             }
             });
         </script>
